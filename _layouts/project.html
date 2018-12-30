@@ -5,8 +5,14 @@
   <h4>Skills</h4>
   {% for skill in page.skills %}
   <p>{{ skill }}</p>
-  {% endfor %} {% for image in page.images %} <img src="{{ image }}" /> {%
-  endfor %}
+  {% endfor %} {% if page.images %}
+  <div
+    class="uk-child-width-1-2@s uk-child-width-1-3@m"
+    uk-grid="masonry: true"
+  >
+    {% for image in page.images %} <img src="{{ image }}" /> {% endfor %}
+  </div>
+  {% endif %}
 
   {{ content }}
 </div>
