@@ -1,0 +1,13 @@
+{% include header.html %}
+<div class="uk-container">
+  <h2>{{ page.name }}</h2>
+
+  <h4>Skills</h4>
+  {% for skill in page.skills %}
+  <p>{{ skill }}</p>
+  {% endfor %} {% for image in page.images %} <img src="{{ image }}" /> {%
+  endfor %}
+
+  {{ content }}
+</div>
+{% include footer.html %}
