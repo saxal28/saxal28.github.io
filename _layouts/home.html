@@ -1,0 +1,20 @@
+{% include header.html %}
+
+<div class="uk-container page-{{page.page_class}}">
+
+    {% include page-loader.html %}
+
+    <div class="swiper-container project-swiper-container hidden">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                {% for project in site.projects %}
+                    <div class="swiper-slide project-slide" style="background: url({{project.main_image}})"></div>
+                {% endfor %}
+            </div>
+    </div>
+
+    {{content}}
+
+</div>
+{% include footer.html %}

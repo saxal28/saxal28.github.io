@@ -1,0 +1,12 @@
+.page-loader {
+    position: absolute;
+    display: flex;
+    /* flex: 1; */
+    background: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    z-index: 13;
+}

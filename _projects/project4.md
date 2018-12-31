@@ -1,7 +1,7 @@
 ---
-name: 'Test Project 2'
+name: 'Test Project 4'
 layout: project
-main_image: https://i.imgur.com/9ruCjcH.jpg
+main_image: https://i.imgur.com/NZSXkqm.jpg
 skills:
     - 'Javas'
     - 'CSS'

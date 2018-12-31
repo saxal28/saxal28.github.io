@@ -1,0 +1,28 @@
+@import "../variables";
+
+.project-swiper-container {
+
+    height: calc(80vh);
+
+    &.hidden {
+        visibility: hidden;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .project-slide {
+        position: relative;
+        height: 280px; 
+        // margin: 0 10px;
+        background-size: cover !important;
+        background-position: 50% !important;
+        transition: height 300ms;
+
+        &.swiper-slide-active {
+            height: 420px;
+        }
+    }
+}
