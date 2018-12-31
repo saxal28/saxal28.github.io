@@ -9,7 +9,16 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 {% for project in site.projects %}
-                    <div class="swiper-slide project-slide" style="background: url({{project.main_image}})"></div>
+                <div 
+                    class="swiper-slide project-slide" 
+                    style="background: url({{project.main_image}})">
+
+                    <div class="slide-content">{{project.name}}</div>
+                    <div class="slide-action">
+                        <img src="../images/see.svg" />
+                    </div>
+
+                </div>
                 {% endfor %}
             </div>
     </div>

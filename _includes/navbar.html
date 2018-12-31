@@ -11,9 +11,6 @@
                 {% for project in site.projects %}
                   <li><a href="{{project.url}}">{{ project.name }}</a></li>
                 {% endfor %}
-                <!-- <li class="uk-active"><a href="#">Active</a></li> -->
-                <!--  -->
-                <!-- <li><a href="#">Item</a></li> -->
               </ul>
             </div>
           </li>
@@ -24,11 +21,21 @@
       <img src="../images/rocket.svg" style="height: 40px;" />
     </a>
     <div class="uk-navbar-center-right">
-      <div>
-        <ul class="uk-navbar-nav">
-          <li><a href="/about">Item</a></li>
-        </ul>
-      </div>
+        <div>
+            <ul class="uk-navbar-nav">
+              <!-- <li class="uk-active"><a href="#">Active</a></li> -->
+              <li>
+                <a href="#">Sandbox</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    {% for project in site.projects %}
+                      <li><a href="{{project.url}}">{{ project.name }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
     </div>
   </div>
 </nav>
