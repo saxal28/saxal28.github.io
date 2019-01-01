@@ -63,5 +63,25 @@
             }
         }
 
+
+        @include respond-to($phone){
+            background: red;
+            height: 150px;
+
+            &.swiper-slide-active {
+                height: 220px;
+
+                .slide-content {
+                    font-size: 14px;
+                }
+    
+                .slide-action {
+                    img {
+                        height: 25px;   
+                    }
+                }
+            }
+        }
+
     }
 }

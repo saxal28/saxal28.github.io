@@ -1,10 +1,14 @@
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+
 $(document).ready(function() {
     var mySwiper = new Swiper ('.swiper-container', {
-        slidesPerView: 2,
+        slidesPerView:  isMobileDevice() ? 1.2 : 2,
         centeredSlides:	true,
         grabCursor: true,
         // loop: true
-        // initialSlide: 1
+        initialSlide: isMobileDevice() ? 1 : 0
     })
 
     setTimeout(() => {
