@@ -2,6 +2,7 @@
 name: 'Test Project 2'
 layout: project
 main_image: https://i.imgur.com/9ruCjcH.jpg
+category: Web
 skills:
     - 'Javas'
     - 'CSS'

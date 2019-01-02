@@ -28,9 +28,14 @@
                 <a href="#">Sandbox</a>
                 <div class="uk-navbar-dropdown">
                   <ul class="uk-nav uk-navbar-dropdown-nav">
-                    {% for project in site.projects %}
-                      <li><a href="{{project.url}}">{{ project.name }}</a></li>
+                   {% for category in site.project_categories %}
+                   <li class="uk-nav-header">{{category}}</li>
+                    {% for site in site.projects %}
+                      {% if site.category contains category %}
+                      <li><a href="{{site.url}}">{{site.name}}</a></li>
+                      {% endif %}
                     {% endfor %}
+                   {% endfor %}
                   </ul>
                 </div>
               </li>

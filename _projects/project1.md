@@ -2,14 +2,18 @@
 name: 'Test Project 1'
 layout: project
 main_image: https://i.imgur.com/MDvm2km.jpg
+category: Web
 skills:
-    - 'Javas'
-    - 'CSS'
-    - 'Nike'
+    - Java
+    - CSS
+    - Nike
 images: 
     - https://i.imgur.com/rsF8Yzo.jpg
     - https://i.imgur.com/7EWaPwH.jpg
     - https://i.imgur.com/tzg8XNc.jpg
+    - https://i.imgur.com/FFaK3VJ.jpg
+    - https://i.imgur.com/9ruCjcH.jpg
+    - https://i.imgur.com/YUmxcWE.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit accumsan sem, quis laoreet arcu. Etiam venenatis orci nisl, eget molestie sem tincidunt at. Cras finibus porta purus, quis faucibus massa accumsan aliquet. Aenean mollis erat ut ligula volutpat, non sagittis tellus commodo. Nunc imperdiet nec elit volutpat maximus. Nunc sagittis erat et maximus mollis. Praesent vulputate lectus vitae augue tempor, a commodo velit laoreet. Integer aliquet malesuada tortor, sed placerat mi. Nulla eleifend, quam ut luctus consequat, est augue tempor eros, eget lacinia eros turpis eu felis. Integer at nibh elementum, auctor lacus eget, maximus turpis. Morbi finibus neque ut tellus tristique fermentum.

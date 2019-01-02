@@ -2,6 +2,7 @@
 name: 'Test Project 4'
 layout: project
 main_image: https://i.imgur.com/NZSXkqm.jpg
+category: Android
 skills:
     - 'Javas'
     - 'CSS'

@@ -32,6 +32,20 @@ plugins:
 collections:
   projects: 
     output: true
+  categories:
+    output: true
+project_categories:
+  - iOS
+  - Web
+  - Android  
+  - Blockchain
+  - React
+  - React Native
+  - API
+  - C#
+  - Unity
+  - Javascript
+  - Static Site Generator 
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

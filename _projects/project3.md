@@ -2,6 +2,7 @@
 name: 'Test Project 3'
 layout: project
 main_image: https://i.imgur.com/GqB6fqz.jpg
+category: iOS
 skills:
     - 'Javas'
     - 'CSS'
