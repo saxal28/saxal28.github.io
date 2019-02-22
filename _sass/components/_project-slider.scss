@@ -2,7 +2,7 @@
 
 .project-swiper-container {
 
-    max-width: 1400px;
+    // max-width: 1400px;
     height: calc(100% - 100px - 20px);
 
     &.hidden {
@@ -12,77 +12,5 @@
     .swiper-wrapper {
         display: flex;
         align-items: center;
-    }
-
-    .project-slide {
-        position: relative;
-        height: 280px; 
-        // margin: 0 10px;
-        background-size: cover !important;
-        background-position: 50% !important;
-        transition: height 200ms ease-out;
-
-        overflow: hidden;
-
-        .slide-content {
-            position: absolute;
-            top:-70px;
-            left:0;
-            background: #D80027;
-            transition: top 250ms ease-in;
-            transition-delay: 200ms;
-            padding: 10px 20px;
-            color: white;
-        }
-
-        .slide-action {
-            position: absolute;
-            top:0px;
-            left:-70px;
-            transition: left 250ms ease-in;
-            transition-delay: 400ms;
-            padding: 10px 10px;
-            background: rgba(0,0,0,0.8);
-            overflow: hidden;
-
-            img {
-                height: 30px;
-            }
-        }
-
-        &.swiper-slide-active {
-            height: 420px;
-            box-shadow: 0px 5px 32px rgba(0,0,0,0.4);
-
-            .slide-content {
-                top: 0;
-            }
-
-            .slide-action {
-                top: 50px;
-                left: 0px;
-            }
-        }
-
-
-        @include respond-to($phone){
-            background: red;
-            height: 35%;
-
-            &.swiper-slide-active {
-                height: 50%;
-
-                .slide-content {
-                    font-size: 14px;
-                }
-    
-                .slide-action {
-                    img {
-                        height: 25px;   
-                    }
-                }
-            }
-        }
-
     }
 }

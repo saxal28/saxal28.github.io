@@ -1,0 +1,114 @@
+.project-card {
+  background: red;
+  margin: 10px;
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+
+  transition: all 400ms ease-out;
+  top: 3%;
+
+  padding: 10px 20px;
+
+  .card-content {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+
+    .card-left {
+      width: 60%;
+      min-width: 60%;
+
+      .card-image {
+      
+        height: 70%;
+        width: 100%;
+        position: relative;
+        transition: all 400ms;
+        top: -10%;
+        -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  
+        background-position: 50% !important;
+        background-size: cover !important;
+      }
+      .action-text {
+        position: relative;
+        top: -20px;
+        margin: 0;
+        color: #999;
+        font-weight: 600;
+
+        transition: all 400ms;
+
+        &:hover {
+          color: #666;
+        }
+
+        margin-bottom: 5px;
+      }
+    }
+
+    .card-right {
+      flex: 1;
+      padding: 0 0px 0 30px;
+      .card-title {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .separator {
+        margin-top: 10px;
+        border: 1px solid #c3c3c3;
+      }
+    }
+  }
+
+  .fab {
+    position: absolute;
+    left: 50px;
+    bottom: -40px;
+    box-sizing: border-box;
+    background-color: #1875d0;
+    width: 80px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 400ms ease-out;
+    opacity: 0;
+
+    img {
+      width: 40px;
+    }
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+
+  &.swiper-slide-active {
+    .project-card {
+      top: -3%;
+      .card-content {
+      }
+      .fab {
+        // background: red;
+        opacity: 1;
+      }
+    }
+  }
+}

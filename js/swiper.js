@@ -8,7 +8,7 @@ $(document).ready(function() {
         centeredSlides:	true,
         grabCursor: true,
         // loop: true
-        initialSlide: isMobileDevice() ? 1 : 0
+        initialSlide: isMobileDevice() ? 1 : 1
     })
 
     setTimeout(() => {

@@ -2,30 +2,42 @@
 
 <!-- <div class="uk-container page-{{page.page_class}}"> -->
 
-    {% include page-loader.html %}
+{% include page-loader.html %}
 
-    <div class="swiper-container project-swiper-container hidden">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                {% for project in site.projects %}
-                <div 
-                    class="swiper-slide project-slide" 
-                    style="background: url({{project.main_image}})">
+<div class="swiper-container project-swiper-container hidden">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        {% for project in site.projects %}
+            <div class="swiper-slide">
 
-                    <div class="slide-content">{{project.name}}</div>
-                    <div class="slide-action">
-                        <a href="{{project.url}}">
-                            <img src="../images/see.svg" />
-                        </a>
+                <div class="project-card">
+
+                    <div class="card-content">
+
+                        <div class="card-left">
+                            <div class="card-image" style="background: url('{{project.main_image}}')"></div>
+                            <a href="{{project.url}}"><h1 class="action-text">VIEW PROJECT</h1></a>
+                            <a href="{{project.url}}"><h1 class="action-text">READ MORE</h1></a>
+                        </div>
+
+                        <div class="card-right">
+                            <div class="card-title">{{project.name}}</div>
+                            <div class="separator"></div>
+                            <p>
+                                {{project.content | truncate: 370}}
+                            </p>
+                        </div>
                     </div>
 
                 </div>
-                {% endfor %}
-            </div>
-    </div>
 
-    <!-- {{content}} -->
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- {{content}} -->
 
 <!-- </div> -->
 {% include footer.html %}

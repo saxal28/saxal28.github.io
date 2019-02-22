@@ -3,6 +3,7 @@
 
 @import "components/project-slider";
 @import "components/page-loader";
+@import "components/project-card";
 
 @import "pages/home";
 @import "pages/project";
@@ -16,7 +17,20 @@ nav {
 }
 
 body {
-    background: url(https://i.imgur.com/4NSfHq3.jpg);
-    background-size: cover;
-    background-position: 50%;
+    // background: url(https://wallpaperbro.com/img/625312.jpg);
+    background-size: cover !important;
+    background-position: 50% !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.particles-js-canvas-el {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
